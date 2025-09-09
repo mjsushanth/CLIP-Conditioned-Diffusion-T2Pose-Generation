@@ -8,7 +8,7 @@ We chose HumanML3D as our foundation because it provides the critical missing li
 
 
 
-# Technical Deep-Dive: Text-to-Pose Generation Pipeline
+# Components, Techniques Implemented: Text-to-Pose Generation Pipeline
 
 ## 1. Strategic Pose Dataset Engineering & Multi-Cluster Sampling
 K-means pose diversity analysis on HumanML3D, 8-cluster balanced sampling strategy, avoided 49.6% cluster dominance bias, POS-tag syntactic segmentation, first-action extraction from sequences, dynamic sampling configs (1.3K-18K), cluster-to-pose mapping architecture, anatomical diversity preservation, rare pose category inclusion, temporal artifact elimination
