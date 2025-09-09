@@ -22,7 +22,7 @@ ConditionedUNet design, CNN-transformer bridge, CLIP embedding integration, mult
 ## 4. CLIP Semantic Encoding & Projection Pipeline
 Frozen CLIP-ViT weights, 512D→256D learnable projection, text tokenization preprocessing, embedding normalization, domain adaptation mapping, semantic-to-pose feature bridge, compositional understanding transfer, multi-level conditioning integration, cross-modal representation learning
 
-## 5. Dual-Pass Classifier-Free Guidance System
+## 5. Dual-Pass CFG. [ Classifier-Free Guidance. ]
 Conditional-unconditional forward passes, null embedding generation, training-time dual inference, sampling-time guidance scaling, progressive guidance ramping (2.0→7.0), attention storage control, text alignment optimization, generation controllability
 
 ## 6. Anatomical Constraint Enforcement & Bone Length Consistency
@@ -31,5 +31,5 @@ Forward kinematics chains, reference bone length database, pelvis-centered const
 ## 7. Optimized Noise Scheduling & Diffusion Training
 1000-step DDPM scheduler, SquaredCos noise schedule, beta range optimization (1e-4→0.006), mixed precision training, gradient clipping implementation, OneCycleLR scheduling, anatomy loss weighting, multi-epoch checkpoint system
 
-## 8. Comprehensive Evaluation & Visualization Pipeline
+## 8. Evaluation & Visualization Pipeline
 Real-time pose rendering, 3D skeleton visualization, text-pose alignment metrics, attention pattern analysis, progressive generation tracking, multi-prompt batch inference, anatomical validation scoring, interactive result exploration
