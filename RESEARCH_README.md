@@ -3,8 +3,8 @@
 
 ## The UNet-Transformer Bridge
 
-### The Fundamental Tension
-The most challenging aspect wasn't implementing individual components but creating a bridge between two fundamentally different architectural paradigms. CNNs expect channel-first tensors `[B, C, H, W]` while transformers work with sequence-last features `[B, seq, features]`. Realized that LayerNorm could serve as the universal normalization strategy, operating on the last dimension regardless of tensor shape.
+The most challenging aspect was creating a bridge between two fundamentally different architectural paradigms. CNNs expect channel-first tensors `[B, C, H, W]` while transformers work with sequence-last features `[B, seq, features]`. Realized that LayerNorm could serve as the universal normalization strategy, operating on the last dimension regardless of tensor shape.
+
 Initially attempted GroupNorm with complex reshape operations to maintain CNN compatibility. The failure wasn't just about tensor shapes— GroupNorm fundamentally assumes channel-grouped feature statistics, which breaks when cross-attention outputs don't follow CNN channel semantics. 
 LayerNorm's last-dimension operation naturally accommodates both `[B, features]` pose vectors and `[B, seq, features]` attention outputs without dimensional gymnastics.
 
