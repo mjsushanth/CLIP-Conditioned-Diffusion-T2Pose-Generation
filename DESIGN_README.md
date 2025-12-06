@@ -11,8 +11,8 @@ Built a **conditional diffusion model** that turns **natural-language captions �
 6. **Classifier-free–style conditional sampling** to generate plausible poses for new prompts.
 
 
-> HumanML3D motion sequences → static 66-D poses via frame selection + normalization 
-    → pose-diversity clustering + first-action caption cleaning → strategic static-pose dataset → 
+> HumanML3D motion sequences → static 66-D poses via frame selection + normalization → 
+    pose-diversity clustering + first-action caption cleaning → strategic static-pose dataset → 
     frozen CLIP ViT-B/32 text encoder + learned projection → 
     CLIP-conditioned UNet with time embeddings and cross-attention trained under DDPM noise scheduling with anatomy-aware losses →
     classifier-free guided sampling to denoise Gaussian pose noise into anatomically valid 3D poses aligned with open-ended text prompts.
